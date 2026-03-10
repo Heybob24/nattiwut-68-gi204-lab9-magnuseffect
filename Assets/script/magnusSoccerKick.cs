@@ -30,7 +30,7 @@ public class agnusSoccerKick : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (isShot) return;
+        if (!isShot) return;
         Vector3 velocity = rb.linearVelocity;
         Vector3 spin = rb.angularVelocity;
 
